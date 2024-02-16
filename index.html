@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+
+    <!-- style sheet -->
+    <link rel="stylesheet" href="style.css" />
+
+</head>
+<body>
+    <div class="container">
+        <div class="main-container">
+            <div class="input-section">
+                <input readonly  id="display"/>
+            </div>
+            <div class="cal-button">
+                <table class="cal">
+                    <tr>
+                        <td>
+                            <button onclick="clearDisplay('C')" class="color">C</button>
+                        </td>
+                        <td>
+                            <button onclick="appendNewValue('**')" class="color">
+                                ^
+                            </button>
+                        </td>
+                        <td>
+                            <button onclick="appendNewValue('%')" class="color">%</button>
+                        </td>
+                        <td>
+                            <button onclick="appendNewValue('/')" class="color">/</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><button onclick="appendNewValue('7')">7</button></td>
+                        <td><button onclick="appendNewValue('8')">8</button></td>
+                        <td><button onclick="appendNewValue('9')">9</button></td>
+                        <td>
+                            <button onclick="appendNewValue('*')" class="color">*</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><button onclick="appendNewValue('4')">4</button></td>
+                        <td><button onclick="appendNewValue('5')">5</button></td>
+                        <td><button onclick="appendNewValue('6')">6</button></td>
+                        <td>
+                            <button onclick="appendNewValue('-')" class="color">-</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><button onclick="appendNewValue('1')">1</button></td>
+                        <td><button onclick="appendNewValue('2')">2</button></td>
+                        <td><button onclick="appendNewValue('3')">3</button></td>
+                        <td>
+                            <button onclick="appendNewValue('+')" class="color">+</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <button onclick="appendNewValue('0')" class="large-Btn">
+                                0
+                            </button>
+                        </td>
+                        <td><button onclick="appendNewValue('.')">.</button></td>
+                        <td>
+                            <button onclick="showResult('=')" class="color">=</button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- script -->
+    <script src="script.js"></script>
+</body>
+</html>
+
+<!-- <button onclick="clearDispalay('C')">C</button>
+          <button onclick="appendNewValue('+/-')">+/-</button>
+          <button onclick="appendNewValue('%')">%</button>
+          <button onclick="appendNewValue('/')">/</button>
+          <button onclick="appendNewValue('7')">7</button>
+          <button onclick="appendNewValue('8')">8</button>
+          <button onclick="appendNewValue('9')">9</button>
+          <button onclick="appendNewValue('*')">*</button>
+          <button onclick="appendNewValue('4')">4</button>
+          <button onclick="appendNewValue('5')">5</button>
+          <button onclick="appendNewValue('6')">6</button>
+          <button onclick="appendNewValue('-')">-</button>
+          <button onclick="appendNewValue('1')">1</button>
+          <button onclick="appendNewValue('2')">2</button>
+          <button onclick="appendNewValue('3')">3</button>
+          <button onclick="appendNewValue('+')">+</button>
+          <button onclick="appendNewValue('0')">0</button>
+          <button onclick="appendNewValue('.')">.</button>
+          <button onclick="showResult('=')" class="large-Btn">=</button> -->
